@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>The_Satan_Records_Web_Audio_Player</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>thesatanrecords-icon.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>The Satan Records</Authors>
+    <Company>The Satan Records</Company>
+    <Description>The Satan Records Web Audio Player. Stream Music Unlimited.</Description>
+    <Copyright>The Satan Records</Copyright>
+    <PackageProjectUrl>https://thesatanrecords.github.io</PackageProjectUrl>
+    <PackageIcon>thesatanrecords-logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TheSatanRecords/</RepositoryUrl>
+    <PackageTags>web;audio;player;music;thesatanrecords;the satan records;</PackageTags>
+    <PackageId>TheSatanRecordsWebAudioPlayer</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="thesatanrecords-icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1150.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="thesatanrecords-logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
